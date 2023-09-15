@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root {
+    --azul-escuro: #303B59;
+    --roxo-intenso: #462BDF;
+    --azul-palatiano: #4936F2;
+    --bege-claro: #D2BD84;
+    --verde-pastel: #94E4D3;
+    --azul-pro-fundo: #474F91;
+    --lilás-suave: #BCADFE;
+    --branco-creme: #FFF6F5;
+    --azul-vibrante: #4B36F3;
+    --creme-de-menta: #F2FBFA;
+    --rosa-claro: #E59EA3;
+    --bege-claro: #FFFBF2;
+    --azul-palido: #F2FBFA;
+    --azul-mariano: #37408B;
+    --branco: #FFFFFF;
+    --pessego-amarelo: #F0D490;
+    --fantasma-branco: #F3F3FD;
+    --pervinca: #C3B4FF;
+    --concha: #FDF7F1;
+    --cor-de-fundo: #F6F7FF;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--cor-de-fundo);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.resumo {
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.resumo-2 {
+    background-color: var(--branco);
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 18px;
+}
+
+.resumo__titulo {
+    color: var(--azul-escuro);
+    font-size: 28px;
+    margin-top: 0.5em;
+}
+
+.lista__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    border: 1px solid var(--azul-vibrante);
+    border-radius: 7px;
+    gap: 1.5em;
+    padding: 6px;
+}
+
+.lista__item div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.lista__item img {
+    width: 18px;
+}
+
+.lista__nome {
+    font-size: 12px;
+}
+
+.lista__numeros {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--azul-escuro)
+}
+
+.lista__numeros span {
+    font-weight: 600;
+}
+
+.lista__item-reacao {
+    background-color: var(--branco-creme);
+}
+
+.lista__nome-reacao {
+    color: var(--rosa-claro);
+    font-weight: 600;
+}
+
+.lista__item-memoria {
+    background-color: var(--bege-claro);
+}
+
+.lista__nome-memoria {
+    color: var(--pessego-amarelo);
+    font-weight: 600;
+}
+
+.lista__item-verbal {
+    background-color: var(--creme-de-menta);
+}
+
+.lista__nome-verbal {
+    color: var(--verde-pastel);
+    font-weight: 600;
+}
+
+.lista__item-visual {
+    background-color: var(--fantasma-branco);
+}
+
+.lista__nome-visual {
+    color: var(--azul-mariano);
+    font-weight: 600;
+}
+
+#botao {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    font-size: 16px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 6px 0;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.resultado-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--azul-palatiano);
+    border-radius: 25px;
+}
+
+.resultado__titulo {
+    font-size: 20px;
+    color: var(--pervinca);
+    font-weight: 700;
+}
+
+.resultado-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--roxo-intenso);
+    border: 1px solid transparent;
+    border-radius: 100%;
+    margin: 1em 0;
+    padding: 2em;
+}
+
+.resultado__principal {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.resultado-maximo {
+    font-size: 10px;
+    font-weight: 100;
+    color: var(--pervinca);
+}
+
+.resultado__sub-titulo {
+    font-size: 24px;
+    color: var(--branco);
+}
+
+.resultado__texto {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0.5em;
+    color: var(--pervinca);
+}
+
+@media (max-width: 844px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 0;
+    }
+
+    .resumo-2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .resultado-2 {
+        height: 100%;
+        width: 100%;
+    }
+}
